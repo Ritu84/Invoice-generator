@@ -1,0 +1,113 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  form {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  
+  .line-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .line-item .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .line-item .form-group .form-control {
+    margin-top: 5px;
+  }
+  
+  .line-item .btn-danger {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (min-width: 576px) {
+    .form-group {
+      display: flex;
+      align-items: center;
+    }
+  
+    .form-group .form-label {
+      flex: 0 0 150px;
+      margin-bottom: 0;
+    }
+  
+    .form-group .form-control {
+      flex: 1;
+    }
+  
+    .line-item .form-group {
+      flex-direction: row;
+    }
+  
+    .line-item .form-group .form-control {
+      flex: 1;
+      margin-left: 10px;
+    }
+  
+    .line-item .btn-danger {
+      flex: 0 0 auto;
+      margin-left: 10px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .line-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  
+    .line-item .form-group {
+      flex: 1 1 200px;
+    }
+  
+    .line-item .form-group .form-control {
+      margin-left: 0;
+    }
+  }
+  

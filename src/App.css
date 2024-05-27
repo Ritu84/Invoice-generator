@@ -1,0 +1,26 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.download-link {
+  font-size: large;
+  font-weight: bold;
+}
+.pdf-viewer {
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .pdf-viewer {
+    width: 100%;
+    height: 400px;
+  }
+
+  .download-link {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
